@@ -23,7 +23,7 @@ class ProgressBar
     @finished_p = false
     @start_time = time_now
     @previous_time = @start_time
-    @title_width = title.length
+    @title_width = title.length + 1
     @format = "%-#{@title_width}s %3d%% %s %s"
     @format_arguments = [:title, :percentage, :bar, :stat]
     clear
